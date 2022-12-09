@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SwitchBlueAnimator
+  m_Controller: {fileID: 9100000, guid: 66f90d32192024571ac62280f96d2654, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 56dd38b61c5b3443a85ad046eb0a1b09, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 395887bb0a9e54ecab7d632e040551ba, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 13760016fc00d4b1fb14044a432df180, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5082fd333bd4b47d28ba4c9ca3981e0d, type: 2}

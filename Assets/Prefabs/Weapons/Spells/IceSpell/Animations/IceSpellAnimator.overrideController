@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IceSpellAnimator
+  m_Controller: {fileID: 9100000, guid: a5d5e400126a14a3e8feb0a2d916322d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 877e6c1cbf66b4136a1ffdc3f0b332c1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: db5128baa90e4423cb817008307e5314, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c8054e1a8c7b043189626fdcb6981b33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fd451fce697c944249faca4c0b9dff69, type: 2}

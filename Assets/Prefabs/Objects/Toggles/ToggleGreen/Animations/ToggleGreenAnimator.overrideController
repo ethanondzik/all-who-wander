@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ToggleGreenAnimator
+  m_Controller: {fileID: 9100000, guid: fca8ec5cc27ff44c2a53181c2786938a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cb14fd0e83f4249d384984296306ae42, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5de59657e211449f3abfba03af9b17de, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4f152f87a935b484ea8c1c3bdacd52a9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b2a9bdfc1be214bc2946639db3290f8c, type: 2}

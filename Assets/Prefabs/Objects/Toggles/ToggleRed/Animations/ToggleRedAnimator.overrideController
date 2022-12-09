@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ToggleRedAnimator
+  m_Controller: {fileID: 9100000, guid: fca8ec5cc27ff44c2a53181c2786938a, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cb14fd0e83f4249d384984296306ae42, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4ac76478e69c74477a029f899d01287b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4f152f87a935b484ea8c1c3bdacd52a9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e0fbde1846a9145fb875fdb94cf6fac9, type: 2}
