@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DarkSpellAnimator
+  m_Controller: {fileID: 9100000, guid: a5d5e400126a14a3e8feb0a2d916322d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 877e6c1cbf66b4136a1ffdc3f0b332c1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 01fab5b8329b44f43b9e82b4dba8d0fa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c8054e1a8c7b043189626fdcb6981b33, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1d751eb4c0dee466e93b2f364e3fa061, type: 2}

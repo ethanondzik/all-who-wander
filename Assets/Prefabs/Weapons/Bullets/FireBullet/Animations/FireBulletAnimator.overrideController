@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FireBulletAnimator
+  m_Controller: {fileID: 9100000, guid: 9ef2f1d685b294168b25bc7f2f312ef7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0bbee6838515446d089a85a97fbb60a1, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 10554e5d50b404ae29ef8520fd7ac3b2, type: 2}
