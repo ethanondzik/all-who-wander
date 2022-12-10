@@ -186,38 +186,39 @@ public class EnemyControlSystem : MovementSystem {
         bool playerInMeleeRange = GetPlayerInMeleeRange();
 
         movement.movementDirection = Vector3.zero;
-        
-        if (brain.attackCounter <= 0) {
 
-            if (!playerInMeleeRange && playerInChaseRange) {
-                brain.state = AIState.Chase;
-                return;
-            }
-            
-            if (!playerInMeleeRange) {
-                brain.state = AIState.Idle;
-                return;
-            }
-
-            animator.SetBool("isAttackingOne", true);
-            brain.attackCounter = 50;
-
-			specs.invulnerable = true;
-
+        if (!playerInMeleeRange && playerInChaseRange) {
+            brain.state = AIState.Chase;
             return;
-
+        }
+            
+        if (!playerInMeleeRange) {
+            brain.state = AIState.Idle;
+            return;
         }
 
-		brain.attackCounter -= 1;
+        animator.SetBool("isAttackingOne", true);
+        specs.invulnerable = true;
+
+    }
+
+    public void Frozen() {
+
+        if (brain.attackCounter <= 0) {
+            brain.state = AIState.Idle;
+            return;
+        }
+
+        brain.attackCounter -= 1;
 
     }
 
 	public void OnAttackEnd() {
-		Debug.Log("Attack End");
+
         animator.SetBool("isAttackingOne", false);
 
-		brain.state = AIState.Idle;
-		brain.idleCounter = 25;
+		brain.state = AIState.Frozen;
+		brain.attackCounter = 25;
 
 		specs.invulnerable = false;
 
@@ -237,7 +238,7 @@ public class EnemyControlSystem : MovementSystem {
 	public void OnDeathEnd() {
         int lootRoll;
         lootRoll = Random.Range(1, 101);
-        if(lootRoll > 11){
+        if(lootRoll > 25){
             Crystal crystal = Instantiate(crystalPreFab, transform.position, transform.rotation, null);
         } else{
             HealthPotion HP_Pot = Instantiate(hpPot, transform.position, transform.rotation, null);
@@ -301,6 +302,10 @@ public class EnemyControlSystem : MovementSystem {
             
             case AIState.Attack:
                 Attack();
+                break;
+            
+            case AIState.Frozen:
+                Frozen();
                 break;
             
         }
