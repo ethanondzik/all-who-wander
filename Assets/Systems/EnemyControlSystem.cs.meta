@@ -3,7 +3,11 @@ guid: 7ac30f1da3b4443a492faf6adad381d0
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - movementSpecs: {instanceID: 0}
+  - body: {instanceID: 0}
+  - crystalPreFab: {fileID: 2487367728250780225, guid: 4b520162d008a4310a3448781b270ad0, type: 3}
+  - hpPot: {fileID: 8794038377284173857, guid: fd5c1f4ce48ff4dde86adc46c907d12a, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

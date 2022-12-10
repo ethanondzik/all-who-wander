@@ -235,8 +235,8 @@ MonoBehaviour:
   specialDefendPower: 1
   attackPower: 1
   defendPower: 1
-  MaxHP: 100
-  HP: 100
+  MaxHP: 50
+  HP: 50
   level: 1
   experience: 0
   experienceThershold: 100
@@ -255,6 +255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementDirection: {x: 0, y: 0, z: 0}
   movementSpeed: 5
+  facing: 0
 --- !u!114 &7232080911807720715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +270,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpecs: {fileID: 0}
   body: {fileID: 0}
+  crystalPreFab: {fileID: 0}
+  hpPot: {fileID: 0}
 --- !u!1001 &110758739984330256
 PrefabInstance:
   m_ObjectHideFlags: 0

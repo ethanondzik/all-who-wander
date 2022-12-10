@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8794038377284173857}
   m_Layer: 0
   m_Name: HealthPot
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,6 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  playerHealthMax: 0
-  playerHealthCurrent: 0
-  healing: 0
+  playerStats: {fileID: 0}
