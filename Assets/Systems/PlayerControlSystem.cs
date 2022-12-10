@@ -41,7 +41,7 @@ public class PlayerControlSystem : MovementSystem {
     }
 
     public void OnSword() {
-
+        
         var meleeSystem = sword.GetComponent<MeleeSystem>();
         meleeSystem.Attack();
         
@@ -106,7 +106,6 @@ public class PlayerControlSystem : MovementSystem {
     public void OnInteract() { }
     
     public void OnMove(InputValue context) {
-
         movement.movementDirection = context.Get<Vector2>();
     }
     

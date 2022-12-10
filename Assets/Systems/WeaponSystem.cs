@@ -16,7 +16,7 @@ public class WeaponSystem : MonoBehaviour {
         var stateCheck = new List<AIState>{
 	        AIState.Idle, AIState.Patrol, AIState.Chase, AIState.Frozen
         };
-
+        
         if (stateCheck.Contains(enemyBrain.state)) {
 
 	        enemyMovement.movementDirection = Vector3.zero;

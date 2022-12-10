@@ -6,10 +6,6 @@ public class ArrowSystem : WeaponSystem {
 
     public void OnTriggerEnter2D(Collider2D collider) {
 
-        var exceptedCollisions = new List<string>{
-	        "Player", "Weapon", "Interactor", "Item"
-        };
-
         if (collider.gameObject.tag == "Enemy") {
 
             GameObject player = GameObject.Find("Player");
@@ -19,15 +15,15 @@ public class ArrowSystem : WeaponSystem {
             
         }
 
-        if (!exceptedCollisions.Contains(collider.gameObject.tag)) {
+        if (collider.gameObject.tag != "Player") {
             Destroy(gameObject);
         }
         
     }
 
-	public void OnBecomeInvisible() {
-		Destroy(gameObject);
-	}
+    public void OnBecameInvisible() {
+        Destroy(gameObject);
+    }
 
     public void Awake() {
 
@@ -87,25 +83,25 @@ public class ArrowSystem : WeaponSystem {
         }
         
         if (playerAnimator.GetBool("isDown")) {
-
+            
             SetArrowState("toDown", 0, -1.35f);
             SetArrowCollider(3.0f, 9.6f);
             SetMovementDirection(0.0f, -1.0f, 0);
 
             return;
         }
-
+        
     }
     
     public void FixedUpdate() {
-
+        
         MovementSpecs specs = gameObject.GetComponent<MovementSpecs>();
         Rigidbody2D body = gameObject.GetComponent<Rigidbody2D>();
         
         Vector2 deltaPosition = specs.movementDirection;
         deltaPosition = deltaPosition * specs.movementSpeed;
         deltaPosition = deltaPosition * Time.fixedDeltaTime;
-
+        
         body.MovePosition(body.position + deltaPosition);
 
     }

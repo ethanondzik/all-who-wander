@@ -107,14 +107,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1095818041220208645, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
-      propertyPath: HP
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095818041220208645, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
-      propertyPath: MaxHP
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 1837022031849731443, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
       propertyPath: m_Controller
       value: 
@@ -167,13 +159,5 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.17
       objectReference: {fileID: 0}
-    - target: {fileID: 7232080911807720715, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
-      propertyPath: hpPot
-      value: 
-      objectReference: {fileID: 8794038377284173857, guid: fd5c1f4ce48ff4dde86adc46c907d12a, type: 3}
-    - target: {fileID: 7232080911807720715, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
-      propertyPath: crystalPreFab
-      value: 
-      objectReference: {fileID: 2487367728250780225, guid: 4b520162d008a4310a3448781b270ad0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97cff28fe7e9c4341893765f4653e831, type: 3}
