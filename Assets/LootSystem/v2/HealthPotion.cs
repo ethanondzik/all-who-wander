@@ -5,15 +5,12 @@ using UnityEngine;
 public class HealthPotion : MonoBehaviour
 {
     public GameObject Player;
-    public double playerHealthMax;
-    public double playerHealthCurrent;
-    private CombatSpecs playerCombatSpecs;
-    public double healing;
+    public CombatSpecs playerStats;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerCombatSpecs = Player.GetComponent<CombatSpecs>();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CombatSpecs>();
 
 
     }
@@ -34,10 +31,10 @@ public class HealthPotion : MonoBehaviour
 
     protected void objectsAction(Collider2D other)
     {
-        playerHealthMax = playerCombatSpecs.MaxHP;
-        playerHealthCurrent =  playerCombatSpecs.HP;
-        healing = playerHealthMax * 0.25;
-        playerCombatSpecs.HP = (int) (healing + playerHealthCurrent);
+        playerStats.HP = playerStats.HP+(playerStats.MaxHP*0.25f);
+        if(playerStats.HP > playerStats.MaxHP){
+            playerStats.HP = playerStats.MaxHP;
+        }
         Destroy(this.gameObject);
         Debug.Log("Healed Player");
     } 

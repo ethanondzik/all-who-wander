@@ -8,6 +8,7 @@ public class WeaponSystem : MonoBehaviour {
 
 	    MovementSpecs enemyMovement = enemy.GetComponent<MovementSpecs>();
         CombatSpecs enemySpecs = enemy.GetComponent<CombatSpecs>();
+        CombatSpecs playerSpecs = player.GetComponent<CombatSpecs>();
         GameObject enemyAvatar = enemy.transform.Find("Avatar").gameObject;
         Animator enemyAnimator = enemyAvatar.GetComponent<Animator>();
         AIBrain enemyBrain = enemy.GetComponent<AIBrain>();
@@ -19,7 +20,7 @@ public class WeaponSystem : MonoBehaviour {
         if (stateCheck.Contains(enemyBrain.state)) {
 
 	        enemyMovement.movementDirection = Vector3.zero;
-            enemySpecs.HP -= 50;
+            enemySpecs.HP -= 50.0f*(playerSpecs.attackPower);
 
             if (enemySpecs.HP <= 0) {
 	            
