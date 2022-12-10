@@ -56,7 +56,7 @@ public class MeleeSystem : WeaponSystem {
 		int collisions = body.Cast(Vector3.zero, filter, result, offset);
 
 		foreach (RaycastHit2D collision in result) {
-
+			
 			GameObject target = collision.collider.gameObject;
 
 			if (owner.tag == "Player" && target.tag == "Enemy") {
