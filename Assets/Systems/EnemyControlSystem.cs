@@ -10,6 +10,8 @@ public class EnemyControlSystem : MovementSystem {
     private MovementSpecs movement;
     private CombatSpecs specs;
     private AIBrain brain;
+    public Crystal crystalPreFab;
+    public HealthPotion hpPot;
 
     public override void Start() {
 
@@ -233,6 +235,14 @@ public class EnemyControlSystem : MovementSystem {
 	}
 
 	public void OnDeathEnd() {
+        int lootRoll;
+        lootRoll = Random.Range(1, 101);
+        if(lootRoll > 11){
+            Crystal crystal = Instantiate(crystalPreFab, transform.position, transform.rotation, null);
+        } else{
+            HealthPotion HP_Pot = Instantiate(hpPot, transform.position, transform.rotation, null);
+        }
+     
 		Destroy(gameObject);
 	}
     
