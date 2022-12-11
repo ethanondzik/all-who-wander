@@ -10,3 +10,5 @@ Player/ filter=lfs diff=lfs merge=lfs -text
 ProjectSettings/ filter=lfs diff=lfs merge=lfs -text
 Storyline/ filter=lfs diff=lfs merge=lfs -text
 Builds filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.resS filter=lfs diff=lfs merge=lfs -text
